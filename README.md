@@ -45,8 +45,8 @@ Backend: https://ai-chatbot-integration-with-google-gemini.onrender.com/
    ```mermaid
    flowchart LR
       A[User Browser] --> B[Frontend - Vite]
-      B --> C[Backend - Express]
-      C --> D[Gemini API - Google GenAI]
+      B -->|POST /api/chat| C[Express Backend]
+      C -->|SDK Call| D[Gemini 2.0 Flash Model]
       D --> C
       C --> B
    ```
