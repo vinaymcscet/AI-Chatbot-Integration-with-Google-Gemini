@@ -49,7 +49,7 @@ Backend: https://ai-chatbot-integration-with-google-gemini.onrender.com/
       C --> D[Gemini API - Google GenAI]
       D --> C
       C --> B
-
+   ```
 ## 📌 Future Improvements
 
 - Chat history memory
