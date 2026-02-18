@@ -32,6 +32,9 @@ An AI-powered chatbot built using Gemini API (Google GenAI), Express.js, and Vit
 5. Run frontend:
    npm run dev
 
+## 📸 Application Preview
+![Chat UI Screenshot](./screenshots/chat-screen.png)
+
 ## 📌 Future Improvements
 
 - Chat history memory
