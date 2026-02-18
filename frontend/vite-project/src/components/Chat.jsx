@@ -8,6 +8,7 @@ const Chat = () => {
     const [isLoading, setIsLoading] = useState(false)
     // const messageEndRef = useRef(null)
     const inputRef = useRef(null)
+    const API_URL = import.meta.env.VITE_API_URL;
 
     const handleSubmit = async (e) => {
         e.preventDefault()
@@ -19,7 +20,7 @@ const Chat = () => {
         setIsLoading(true)
 
         try {
-            const response = await fetch('http://localhost:5000/api/chat', {
+            const response = await fetch(`${API_URL}/api/chat`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
