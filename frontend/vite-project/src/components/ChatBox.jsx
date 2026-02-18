@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react"
 import { PaperAirplaneIcon } from '@heroicons/react/24/outline'
 import ChatMessage from "./ChatMessage"
 
-const Chat = () => {
+const ChatBox = () => {
     const [messages, setMessages] = useState([])
     const [input, setInput] = useState("")
     const [isLoading, setIsLoading] = useState(false)
@@ -97,4 +97,4 @@ const Chat = () => {
     )
 }
 
-export default Chat
+export default ChatBox
